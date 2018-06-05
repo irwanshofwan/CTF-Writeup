@@ -17,10 +17,10 @@ flag = [233, 129, 9, 5, 130, 194, 195, 39, 75, 229]
 f = ""
 
 for i in flag:
-	for x in a:
-		p = (((ord(x)<<5) | (ord(x) >> 3)) ^ 111) & 255
-		if i == p:
-			f += chr(ord(x))
+  for x in a:
+    p = (((ord(x)<<5) | (ord(x) >> 3)) ^ 111) & 255
+    if i == p:
+      f += chr(ord(x))
 
 print(f)
 
